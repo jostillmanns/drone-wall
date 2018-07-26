@@ -1,3 +1,4 @@
-FROM fnichol/uhttpd
+FROM lsioarmhf/nginx-armhf
 EXPOSE 80
-ADD build /www
+ADD build /var/www
+ADD nginx-default /etc/nginx/conf.d/default.conf
